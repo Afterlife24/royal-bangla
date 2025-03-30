@@ -35,11 +35,13 @@ const App: React.FC = () => {
       <Footer />
 
       {/* Floating Image */}
-      <img 
-  src={scanMeIcon}
-  alt="Floating Icon"
-  className="fixed bottom-4 right-4 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain shadow-lg rounded-[8px]"
-/>
+      <a href="https://royalbangla-scanme.gofastapi.com/?table_num=0">
+  <img 
+    src={scanMeIcon}
+    alt="Floating Icon"
+    className="fixed bottom-4 right-4 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain shadow-lg rounded-[8px]"
+  />
+</a>
 
     </div>
   );
