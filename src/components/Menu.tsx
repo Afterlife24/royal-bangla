@@ -1,101 +1,16 @@
-// import React, { useState } from 'react';
-// import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-// const menuItems = [
-//   {
-//     category: 'Starters',
-//     items: [
-//       {
-//         name: 'Truffle Arancini',
-//         description: 'Crispy risotto balls with black truffle and mozzarella',
-//         price: '$16',
-//         image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-//       },
-//       {
-//         name: 'Tuna Tartare',
-//         description: 'Fresh tuna with avocado, sesame oil, and won ton crisps',
-//         price: '$18',
-//         image: 'https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-//       }
-//     ]
-//   },
-//   {
-//     category: 'Main Courses',
-//     items: [
-//       {
-//         name: 'Wagyu Ribeye',
-//         description: 'Grade A5 Japanese Wagyu with roasted vegetables',
-//         price: '$85',
-//         image: 'https://images.unsplash.com/photo-1546833998-877b37c2e604?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-//       },
-//       {
-//         name: 'Lobster Thermidor',
-//         description: 'Whole lobster with brandy cream sauce',
-//         price: '$75',
-//         image: 'https://images.unsplash.com/photo-1553247407-23251ce81f59?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-//       }
-//     ]
-//   }
-// ];
-
-// const Menu = () => {
-//   const [activeCategory, setActiveCategory] = useState(0);
-
-//   return (
-//     <section id="menu" className="py-20 bg-white">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2 className="text-4xl font-bold text-center mb-12">Our Menu</h2>
-        
-//         <div className="flex justify-center space-x-4 mb-12">
-//           {menuItems.map((category, index) => (
-//             <button
-//               key={category.category}
-//               onClick={() => setActiveCategory(index)}
-//               className={`px-6 py-2 rounded-full transition-all duration-300 ${
-//                 activeCategory === index
-//                   ? 'bg-amber-600 text-white'
-//                   : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-//               }`}
-//             >
-//               {category.category}
-//             </button>
-//           ))}
-//         </div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-//           {menuItems[activeCategory].items.map((item) => (
-//             <div
-//               key={item.name}
-//               className="group relative overflow-hidden rounded-lg shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-//             >
-//               <div className="relative h-64">
-//                 <img
-//                   src={item.image}
-//                   alt={item.name}
-//                   className="w-full h-full object-cover"
-//                 />
-//                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-//                 <div className="absolute inset-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//                   <h3 className="text-2xl font-bold mb-2">{item.name}</h3>
-//                   <p className="mb-2">{item.description}</p>
-//                   <p className="text-xl font-bold">{item.price}</p>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Menu;
 
 
 
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import img1 from "../assets/2.jpeg";
+import img2 from "../assets/img2.jpeg";
+import img3 from "../assets/img3.jpeg";
+import img4 from "../assets/img4.jpeg";
+import img5 from "../assets/img5.jpeg"
+import img6 from "../assets/img6.jpeg"
+
 
 
 const menuItems = [
@@ -106,25 +21,25 @@ const menuItems = [
         name: 'Butter chicken ',
         description: 'Crispy risotto balls with black truffle and mozzarella',
         price: '$16',
-        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: img1
       },
       {
         name: 'Poulet  korma ',
         description: 'Fresh tuna with avocado, sesame oil, and won ton crisps',
         price: '$18',
-        image: 'https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: img2
       },
       // {
       //   name: 'Foie Gras',
       //   description: 'Pan-seared foie gras with brioche and fig jam',
       //   price: '$24',
-      //   image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      //   image: img1
       // },
       // {
       //   name: 'Oysters Rockefeller',
       //   description: 'Baked oysters with spinach and hollandaise',
       //   price: '$22',
-      //   image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      //   image: img1
       // }
     ]
   },
@@ -135,25 +50,25 @@ const menuItems = [
         name: 'Royal Tikka ',
         description: 'Grade A5 Japanese Wagyu with roasted vegetables',
         price: '$85',
-        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: img3
       },
       {
         name: 'Tandoori',
         description: 'Whole lobster with brandy cream sauce',
         price: '$75',
-        image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+        image: img1
       },
       // {
       //   name: 'Duck Confit',
       //   description: 'Classic French duck confit with pommes sarladaises',
       //   price: '$45',
-      //   image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      //   image: img1
       // },
       // {
       //   name: 'Sea Bass',
       //   description: 'Pan-seared sea bass with saffron risotto',
       //   price: '$52',
-      //   image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      //   image: img1
       // }
     ]
   },
@@ -164,25 +79,25 @@ const menuItems = [
   //       name: 'Truffle Pasta',
   //       description: 'Fresh tagliatelle with black truffle shavings',
   //       price: '$55',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Lobster Risotto',
   //       description: 'Carnaroli risotto with fresh Maine lobster',
   //       price: '$48',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Seafood Linguine',
   //       description: 'Mixed seafood in white wine and garlic sauce',
   //       price: '$42',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Wild Mushroom Risotto',
   //       description: 'Creamy risotto with seasonal wild mushrooms',
   //       price: '$38',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     }
   //   ]
   // },
@@ -193,25 +108,25 @@ const menuItems = [
   //       name: 'Crème Brûlée',
   //       description: 'Classic vanilla bean crème brûlée',
   //       price: '$14',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Chocolate Soufflé',
   //       description: 'Warm chocolate soufflé with vanilla ice cream',
   //       price: '$16',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Opera Cake',
   //       description: 'Layers of almond sponge, coffee buttercream, and chocolate',
   //       price: '$15',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     },
   //     {
   //       name: 'Fruit Tart',
   //       description: 'Seasonal fruits on vanilla pastry cream',
   //       price: '$13',
-  //       image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+  //       image: img1
   //     }
   //   ]
   // }
@@ -228,19 +143,19 @@ const featuredDishes = [
     name: 'Duck à l\'Orange',
     description: 'Classic French duck with citrus sauce',
     price: '$65',
-    image: 'https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: img4
   },
   {
     name: 'Beef Wellington',
     description: 'Prime beef wrapped in puff pastry',
     price: '$95',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: img3
   },
   {
     name: 'Truffle Pasta',
     description: 'Fresh pasta with black truffle shavings',
     price: '$55',
-    image: 'https://images.unsplash.com/photo-1556760544-74068565f05c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+    image: img6
   }
 ];
 

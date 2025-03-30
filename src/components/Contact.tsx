@@ -13,19 +13,19 @@ const Contact = () => {
               {
                 icon: Phone,
                 title: 'Phone',
-                content: '+1 (555) 123-4567',
-                link: 'tel:+15551234567'
+                content: '0749809042',
+                
               },
               {
                 icon: Mail,
                 title: 'Email',
-                content: 'reservations@saveur.com',
+                content: 'Royalbangla2000@gmail.com',
                 link: 'mailto:reservations@saveur.com'
               },
               {
                 icon: MapPin,
                 title: 'Address',
-                content: '123 Culinary Avenue, Foodie District, NY 10001',
+                content: 'Royal Bangla, Galerie Océane, 10 Rdpt de la Corbinerie, 44400 Rezé, France',
                 link: 'https://maps.google.com'
               }
             ].map((item) => (
@@ -51,7 +51,7 @@ const Contact = () => {
           <div className="h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Restaurant Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645890124663!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d86812.69258235424!2d-1.6291777936210505!3d47.1598786578809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4805e97051ae8eaf%3A0x94e85ca693097bfd!2sGalerie%20Oc%C3%A9ane%2C%2010%20Rdpt%20de%20la%20Corbinerie%2C%2044400%20Rez%C3%A9%2C%20France!3m2!1d47.1599082!2d-1.5467773!5e0!3m2!1sen!2sin!4v1743354631500!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
