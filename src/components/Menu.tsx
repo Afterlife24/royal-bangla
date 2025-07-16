@@ -18,27 +18,27 @@ const menuItems = [
     category: 'Nos plats ',
     items: [
       {
-        name: 'Butter chicken ',
-        description: 'Crispy risotto balls with black truffle and mozzarella',
-        price: '$16',
-        image: img1
+        name: 'POULET BUTTER - ORIGINE: RAJASTHAN',
+    description: "Poulet mariné dans un mélange d'épices et de yaourt, puis grillé et préparé dans une sauce à base de crème, de beurre, de tomates, de noix de cajou et d'amandes'",
+    price: '€14.90',
+    image: img4
       },
       {
-        name: 'Poulet  korma ',
-        description: 'Fresh tuna with avocado, sesame oil, and won ton crisps',
-        price: '$18',
+        name: 'DOUBLE EXPRESSO ',
+        description: 'Notre Double Expresso est préparé avec deux doses de café moulu finement, extrait sous pression pour une texture onctueuse et une crème dorée.',
+        price: '€2.40',
         image: img2
       },
       // {
       //   name: 'Foie Gras',
       //   description: 'Pan-seared foie gras with brioche and fig jam',
-      //   price: '$24',
+      //   price: '€24',
       //   image: img1
       // },
       // {
       //   name: 'Oysters Rockefeller',
       //   description: 'Baked oysters with spinach and hollandaise',
-      //   price: '$22',
+      //   price: '€22',
       //   image: img1
       // }
     ]
@@ -47,27 +47,27 @@ const menuItems = [
     category: 'Nos entrées',
     items: [
       {
-        name: 'Royal Tikka ',
-        description: 'Grade A5 Japanese Wagyu with roasted vegetables',
-        price: '$85',
-        image: img3
+        name: 'LASSI MANGUE',
+    description: 'Yaourt aromatisé à la mangue, à la cardamome, aux amandes et au lait.',
+    price: '€5.50',
+    image: img3
       },
       {
-        name: 'Tandoori',
-        description: 'Whole lobster with brandy cream sauce',
-        price: '$75',
-        image: img1
+       name: 'NAAN AU FROMAGE',
+    description: 'NAAN AU FROMAGE',
+    price: '€3.50',
+    image: img1
       },
       // {
       //   name: 'Duck Confit',
       //   description: 'Classic French duck confit with pommes sarladaises',
-      //   price: '$45',
+      //   price: '€45',
       //   image: img1
       // },
       // {
       //   name: 'Sea Bass',
       //   description: 'Pan-seared sea bass with saffron risotto',
-      //   price: '$52',
+      //   price: '€52',
       //   image: img1
       // }
     ]
@@ -78,25 +78,25 @@ const menuItems = [
   //     {
   //       name: 'Truffle Pasta',
   //       description: 'Fresh tagliatelle with black truffle shavings',
-  //       price: '$55',
+  //       price: '€55',
   //       image: img1
   //     },
   //     {
   //       name: 'Lobster Risotto',
   //       description: 'Carnaroli risotto with fresh Maine lobster',
-  //       price: '$48',
+  //       price: '€48',
   //       image: img1
   //     },
   //     {
   //       name: 'Seafood Linguine',
   //       description: 'Mixed seafood in white wine and garlic sauce',
-  //       price: '$42',
+  //       price: '€42',
   //       image: img1
   //     },
   //     {
   //       name: 'Wild Mushroom Risotto',
   //       description: 'Creamy risotto with seasonal wild mushrooms',
-  //       price: '$38',
+  //       price: '€38',
   //       image: img1
   //     }
   //   ]
@@ -107,25 +107,25 @@ const menuItems = [
   //     {
   //       name: 'Crème Brûlée',
   //       description: 'Classic vanilla bean crème brûlée',
-  //       price: '$14',
+  //       price: '€14',
   //       image: img1
   //     },
   //     {
   //       name: 'Chocolate Soufflé',
   //       description: 'Warm chocolate soufflé with vanilla ice cream',
-  //       price: '$16',
+  //       price: '€16',
   //       image: img1
   //     },
   //     {
   //       name: 'Opera Cake',
   //       description: 'Layers of almond sponge, coffee buttercream, and chocolate',
-  //       price: '$15',
+  //       price: '€15',
   //       image: img1
   //     },
   //     {
   //       name: 'Fruit Tart',
   //       description: 'Seasonal fruits on vanilla pastry cream',
-  //       price: '$13',
+  //       price: '€13',
   //       image: img1
   //     }
   //   ]
@@ -134,27 +134,27 @@ const menuItems = [
 
 const featuredDishes = [
   {
-    name: 'Nos pains',
-    description: 'Le naan : la douceur moelleuse qui accompagne tous vos repas',
-    price: '$120',
+    name: 'NAAN AU FROMAGE',
+    description: 'NAAN AU FROMAGE',
+    price: '€3.50',
     image: img1
   },
   {
-    name: 'Duck à l\'Orange',
-    description: 'Classic French duck with citrus sauce',
-    price: '$65',
+    name: 'POULET BUTTER - ORIGINE: RAJASTHAN',
+    description: "Poulet mariné dans un mélange d'épices et de yaourt, puis grillé et préparé dans une sauce à base de crème, de beurre, de tomates, de noix de cajou et d'amandes'",
+    price: '€14.90',
     image: img4
   },
   {
-    name: 'Beef Wellington',
-    description: 'Prime beef wrapped in puff pastry',
-    price: '$95',
+    name: 'LASSI MANGUE',
+    description: 'Yaourt aromatisé à la mangue, à la cardamome, aux amandes et au lait.',
+    price: '€5.50',
     image: img3
   },
   {
-    name: 'Truffle Pasta',
-    description: 'Fresh pasta with black truffle shavings',
-    price: '$55',
+    name: "NAAN À L'AIL",
+    description: "Pain à la farine de blé farci d'ail frais, cuit dans le four tandoor et parsemé de coriandre fraiche et de beurre",
+    price: '€3.50',
     image: img6
   }
 ];
