@@ -223,7 +223,7 @@ const Menu = () => {
                   <p className="text-lg mb-2">{dish.description}</p>
                   <div className="flex items-center justify-between">
                     <p className="text-2xl font-bold text-amber-400">{dish.price}</p>
-                    <a href="https://royalbangla-scanme.gofastapi.com/?table_num=0">
+                    <a href="https://www.royalbangla-scanme.afterlife.org.in//?table_num=0">
                     <button
                       onClick={() => handleOrder(dish.name, dish.price)}
                       className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full transform hover:scale-105 transition-all duration-300"
@@ -300,7 +300,7 @@ const Menu = () => {
                   <p className="mb-2">{item.description}</p>
                   <div className="flex items-center justify-between mt-4">
                     <p className="text-xl font-bold text-amber-400">{item.price}</p>
-                      <a href="https://royalbangla-scanme.gofastapi.com/?table_num=0">
+                      <a href="https://www.royalbangla-scanme.afterlife.org.in//?table_num=0">
   <button
     onClick={() => handleOrder(item.name, item.price)}
     className="flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full transform hover:scale-105 transition-all duration-300"
