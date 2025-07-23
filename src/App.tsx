@@ -35,7 +35,7 @@ const App: React.FC = () => {
       <Footer />
 
       {/* Floating Image */}
-      <a href="https://royalbangla-scanme.gofastapi.com/?table_num=0">
+      <a href="https://www.royalbangla-scanme.afterlife.org.in//?table_num=0">
   <img 
     src={scanMeIcon}
     alt="Floating Icon"
