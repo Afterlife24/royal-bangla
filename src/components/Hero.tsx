@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4">
   <button 
   onClick={() => {
-    window.location.href = "https://www.royalbangla-scanme.afterlife.org.in//?table_num=0";
+    window.location.href = "https://www.royalbangla-scanme.afterlife.org.in/?table_num=0";
   }}
   className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
     hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
@@ -44,7 +44,7 @@ const Hero = () => {
 
 <button 
   onClick={() => {
-    window.location.href = "https://www.royalbangla-scanme.afterlife.org.in//?table_num=0";
+    window.location.href = "https://www.royalbangla-scanme.afterlife.org.in/?table_num=0";
   }}
   className="bg-amber-600 text-white px-8 py-3 rounded-full text-lg font-semibold
     hover:bg-amber-700 transform hover:scale-105 transition-all duration-300
